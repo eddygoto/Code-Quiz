@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+
+body {
+    min-height: 100vh;
+}
+
+.header {
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+}
+
+.header h1 {
+    width: 50%;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.timer-container {
+    float: right;
+}
+
+.timer-container p {
+    display: inline-block;
+    padding: 5px;
+}
+
+.quiz-container {
+    margin: auto;
+    font-family: 'Press Start 2P', cursive;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+}
+
+.intro {
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+}
+
+#start {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.answers li {
+    list-style: none;
+}
