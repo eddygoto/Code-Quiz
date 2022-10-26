@@ -11,28 +11,47 @@
       background-image: url("https://wallpaperaccess.com/full/418495.jpg");
     }
   </style>
-  <body class="test">
+  <main class="test">
     <div class="header">
       <h1><a href="">View Highscores</a></h1>
       <div class="timer-container">
         <p id="countdown">Time:</p>
-        <p id="timer">30</p>
-      </div>
-    </div>
-  </body>
-  <main>
-    <div class="quiz-container">
-      <button id="start" style="display: block">Start</button>
-      <div class="play">
-        <p id="question"></p>
-        <ul class="answers">
-          <li class="btn" id="a"></li>
-          <li class="btn" id="b"></li>
-          <li class="btn" id="c"></li>
-          <li class="btn" id="d"></li>
-        </ul>
+        <p id="timer">60</p>
       </div>
     </div>
   </main>
-  <script src="./Assets/js/script.js"></script>
+  <body>
+    <div class="play-container">
+      <div id="game" class="game-container">
+        <div id="hud">
+          <div id="hud-item">
+            <p class="hud-prefix">Question</p>
+            <p class="hud-text" id="questionCounter"></p>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix">Score</p>
+            <p class="hud-text" id="score">0</p>
+          </div>
+        </div>
+        <p id="question"></p>
+        <div class="choice-container">
+          <p class="choice">a</p>
+          <p class="choice-text" data-number="1">text</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice">b</p>
+          <p class="choice-text" data-number="2">text</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice">c</p>
+          <p class="choice-text" data-number="3">text</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice">d</p>
+          <p class="choice-text" data-number="4">text</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./Assets/js/quiz.js"></script>
 </html>

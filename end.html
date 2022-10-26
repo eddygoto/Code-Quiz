@@ -11,27 +11,37 @@
       background-image: url("https://images5.alphacoders.com/950/950765.png");
     }
   </style>
-  <body class="end">
-    <div class="header">
-      <h1><a href="">View Highscores</a></h1>
-      <div class="timer-container">
-        <p id="countdown">Time:</p>
-        <p id="timer">30</p>
+  <body>
+    <div class="intro-container">
+      <div id="end" class="game-container">
+        <h1 id="finalScore"></h1>
+        <h2 id="headerText">Enter Your Initials</h2>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="_ _ _"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScore"
+            onclick="saveHighScore(event)"
+          >
+            Save Your Highscore!
+          </button>
+          <button
+            type="submit"
+            class="btn"
+            id="returnHome"
+            onclick="returnHome(event)"
+          >
+            Return To Homepage
+          </button>
+        </form>
       </div>
     </div>
   </body>
-  <main>
-    <div class="quiz-container">
-      <div class="play">
-        <p id="question"></p>
-        <ul class="answers">
-          <li class="btn" id="a"></li>
-          <li class="btn" id="b"></li>
-          <li class="btn" id="c"></li>
-          <li class="btn" id="d"></li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <script src="./Assets/js/script.js"></script>
+  <script src="./Assets/js/end.js"></script>
 </html>
