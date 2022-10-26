@@ -210,5 +210,6 @@ decreaseTimer = () => {
     timerCount.textContent = timerCount;
 }
 
-startGame();
-startTimer();
+// runs both functions
+window.onload = startGame();
+window.onload = startTimer();
